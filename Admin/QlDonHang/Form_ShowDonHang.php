@@ -16,6 +16,7 @@
                     <th scope="col">Trạng Thái</th>
                     <th scope="col">Chi Tiết</th>
                     <th scope="col">Xác Nhận</th>
+                    <th scope="col">Giao thành công</th>
                     <th scope="col">Hủy Đơn</th>
                 </tr>
             </head>
@@ -42,6 +43,9 @@
         else if($r['trangthai'] == 3){
             $trangthai = "Đơn đã bị hủy";
         }
+        else if($r['trangthai'] == 4){
+            $trangthai = "Đơn đã giao thành công";
+        }
         
 ?>
             
@@ -65,6 +69,11 @@
                     </a>
                 </td>
                 <td>
+                    <a href="../QlDonHang/Form_ConfirmDHSuccess.php?id=<?=$r['idHD']?>">
+                        <button class="btn btn-primary confirm" >Giao thành công</button>
+                    </a>
+                </td>
+                <td>
                     <a href="javascript:confirmCancel('../QlDonHang/Form_CancelDH.php?id=<?=$r['idHD']?>')">
                         <button class="btn btn-primary cancel">Hủy Đơn</button>
                     </a>
@@ -76,7 +85,19 @@
             </body>
         </table>
     </div>
-
+<?php
+    // include("../QlSanPham/Connect.php");
+    // $sql = "select * from hoadon";
+    // $result = mysqli_query($conn, $sql);
+    // while($r = mysqli_fetch_assoc($result)){
+    //     if($r['trangthai'] == 2){
+    //         echo "<script>";
+    //         echo "var cancelBtn = $('.cancel')";
+    //         echo "cancelBtn.disabled = true;"
+    //         echo "</script>";
+    //     }
+    // }
+    ?>
 </body>
 
 </html>

@@ -100,4 +100,14 @@ nav
     background-color: #fff;
 }
 
+.select-month{
+    margin-top: 80px;
+    text-align: right;
+    padding: 10px 16px;
+}
+
+.select-month select{
+    min-width: 150px;
+}
+
 
