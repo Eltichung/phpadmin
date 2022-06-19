@@ -102,6 +102,7 @@ session_start();
                                 <i class="fas fa-chevron-right"></i>MANGO</a></li>
                     </ul>
                 </li>
+                <li class="category-item"><a href="./showAllSp/showAllSP.php">SẢN PHẨM</a></li>
                 <li class="category-item-sp"><a href="">GIÁ BÁN</a>
                     <ul class="category-sp-list">
                         <li class="category-sp-item">

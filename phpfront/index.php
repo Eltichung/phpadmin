@@ -67,7 +67,7 @@ require "../common/csdl.php";
                     <div class="content3-item" style="width:284px;box-sizing: border-box; ">
                         <a href="./product/details_product.php?id_pro=<?=$r['id']?>"><img style="width:264px ;height:264px;" src="<?="../Admin/QlSanPham/".$r['image']?>" alt=""></a>
                         <h4 ><p style="overflow-x: hidden;"><?=$r['name'] ?></p></h4>
-                        <h5><?=$r['price_sale']?></h5>
+                        <span style="margin: 10px 4px 10px 0px; display:inline-block; text-decoration: line-through;"><?=$r['price_sale']?></span><span><?=$r['price_sale'] - ($r['price_sale'] * $r['discount'] / 100)?></span>
                         <div class="content3-emote">
                             <i class="far fa-heart"></i>
                             <i class="fas fa-eye"></i>
@@ -121,9 +121,9 @@ require "../common/csdl.php";
                 <div class="content3-list">
                     <?php while($h = mysqli_fetch_assoc($result_hot)){ ?>
                     <div class="content3-item" >
-                    <a href="./product/details_product.php?id_pro=<?=$h['id']?>"><img style="width:264;height:264px;" src="<?=$h['image']?>" alt=""></a>
+                    <a href="./product/details_product.php?id_pro=<?=$h['id']?>"><img style="width:264;height:264px;" src="<?="../Admin/QlSanPham/".$h['image']?>" alt=""></a>
                         <h4 ><p style="overflow-x: hidden;"><?=$h['name'] ?></p></h4>
-                        <h5><?=$h['price_sale']?></h5>
+                        <span style="margin: 10px 4px 10px 0px; display:inline-block; text-decoration: line-through;"><?=$h['price_sale']?></span><span><?=$h['price_sale'] - ($h['price_sale'] * $h['discount'] / 100)?></span>
                         <div class="content3-emote">
                             <i class="far fa-heart"></i>
                             <i class="fas fa-eye"></i>
@@ -161,7 +161,7 @@ require "../common/csdl.php";
                     
                 <?php while($h = mysqli_fetch_assoc($result_ban_chay)){ ?>
                     <div class="content6-item">
-                        <img  class="content6-img" src="<?=$h['image']?>" alt="">
+                        <img  class="content6-img" src="<?="../Admin/QlSanPham/".$h['image']?>" alt="">
                         <div class="content6-right">
                         <h4><?=$h['name']?></h4>
                         <h5><?=$h['price_sale']?></h5>

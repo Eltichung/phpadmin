@@ -161,7 +161,7 @@ a{
     <main>
     <?php require "../common/header_shop.php" ?>
         <div class="content1">
-        <img src="../<?php  print_r($result['image']) ?>" alt="" class="product-img">
+        <img src="../../Admin/QlSanPham/<?=$result['image']?>" alt="" class="product-img">
         <div class="description">
                 <div class="product_decription">
                     <h1 class="decription-h1"><?php print_r($result['name']) ?></h1>

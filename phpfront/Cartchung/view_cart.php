@@ -83,7 +83,7 @@ else{
 
                     <td class="gia"><?php echo $item['price_sale'] ?></td>
                     <td>
-                        <img style="width:50px; height: 50px;" src="<?='../'.$item['image']?>" />
+                        <img style="width:50px; height: 50px;"  src="<?='../../Admin/QlSanPham/'.$item['image']?>" />
                     </td>
                     <td class="thanhtien"><?php echo $item['quantity'] * $item['price_sale'] ?></td>
                     <td>
