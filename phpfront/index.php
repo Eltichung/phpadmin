@@ -51,10 +51,6 @@ require "../common/csdl.php";
                 <img class="img" src="./image/thoitrang3.PNG" alt="">
                 <img class="img" src="./image/thoitrang4.PNG" alt="">
                 <img class="img" src="./image/thoitrang5.PNG" alt="">
-                <img class="img" src="./image/thoitrang7.PNG" alt="">
-                <img class="img" src="./image/thoitrang3.PNG" alt="">
-                <img class="img" src="./image/thoitrang4.PNG" alt="">
-                <img class="img" src="./image/thoitrang5.PNG" alt="">
             </div>
             <div class="content2">
                 <div class="content2-1">
@@ -69,7 +65,7 @@ require "../common/csdl.php";
                 <div class="content3-list" style = "display: flex; justify-content:center; ">
                     <?php while($r = mysqli_fetch_assoc($result_noi_bat)){ ?>
                     <div class="content3-item" style="width:284px;box-sizing: border-box; ">
-                        <a href="./product/details_product.php?id_pro=<?=$r['id']?>"><img style="width:264;height:264px;" src="<?=$r['image']?>" alt=""></a>
+                        <a href="./product/details_product.php?id_pro=<?=$r['id']?>"><img style="width:264px ;height:264px;" src="<?=$r['image']?>" alt=""></a>
                         <h4 ><p style="overflow-x: hidden;"><?=$r['name'] ?></p></h4>
                         <h5><?=$r['price_sale']?></h5>
                         <div class="content3-emote">

@@ -28,5 +28,9 @@
         if(isset($_SESSION['id'])){
             header("Location: ../index.php");
         }
-       
+        if (isset($_SESSION['Admin'])){
+            session_start();
+            $admin = $_SESSION['Admin'];
+            header('Location: ../Admin/GdAdmin/index.php');
+        }
 ?>
