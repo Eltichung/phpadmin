@@ -1,0 +1,32 @@
+<?php
+    include('../../QlSanPham/Connect.php');
+    
+    $sql = "select * from sanpham";
+    $result = mysqli_query($conn, $sql);
+    while($r = mysqli_fetch_assoc($result)){
+        $type = $r['type'];
+        $sql1 = "select * from loaisp where id = '$type'";
+        $re = mysqli_query($conn, $sql1);
+        $nameType = mysqli_fetch_assoc($re)['name']; 
+?>
+<table>
+            <tr>
+                <td  scope="row"><?=$r['id']?></td>
+                <td><?=$r['name']?></td>
+                <td><?=$nameType?></td>
+                <td><?=$r['brand']?></td>
+                <td><?=$r['price']?></td>
+                <td><?=$r['quantity']?></td>
+                <td><?=$r['description']?></td>
+                <td>
+                    <img style="width:50px; height: 50px;" src=<?=$r['image']?> />
+                </td>
+                <td>
+                    <a href="cart.php?id=<?=$r['id']?>">Them vao gio hang</a>
+                </td>
+             
+            </tr>
+    </table>
+<?php
+    }
+?>

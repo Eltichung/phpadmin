@@ -1,0 +1,638 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none !important;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+/* Header */
+.header{
+    height: 90px;
+    background-color: #106f85;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo{
+    margin: 0 60px 0 190px;
+    font-weight: 700;
+    font-size: 1.5rem;
+   
+    padding: 5px;
+}
+.header-logo img{
+    height: 40px;
+    width: 70px;
+}
+.header-logo:hover{
+    cursor: pointer;
+}
+.header-search{
+    height: 40px;
+    width: 465px;
+    background-color: #fff;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+}
+.header-search-input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    border-radius: 3px;
+}
+.header-search-search{
+    border: none;
+    background-color: #fff;
+    margin-right: 10px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.header-search-search:hover{
+    cursor: pointer;
+}
+.header-btn1{
+    width: 150px;
+    min-height: 38px;
+    background-color: #0c6377;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 0;
+}
+.header-btn2{
+    position: relative;
+    width:  150px; 
+    background-color: #0c6377;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    font-size: 13px;
+    padding: 10px;
+    margin-right: 100px;
+}
+.login-signup{
+    position: absolute;
+    width: 150px;
+    background-color:white;
+    list-style: none;
+    top: 100%;
+    right: 0;
+    display: none;
+}
+.header-btn2:hover .login-signup{
+    display: block;
+}
+
+.login-signup>li>a{
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 15px;
+}
+.login-signup>li>a:hover{
+    color: #106f85;
+}
+.header-btn1:hover{
+    background-color: #333;
+}
+.header-btn2:hover{
+    background-color: #0c6377;
+  
+}
+.header-bag{
+    padding-left: 10px;
+    margin: 0px 50px 0px 50px;
+    position: relative;
+}
+.header-bag-img{
+    height: 35px;
+    width: 100%;
+}
+.header-btn{
+    margin-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+.header-bag-notice{
+    position: absolute;
+    border-radius: 50%;
+    padding: 3px 8px;
+    color: #fff;
+    background-color: #ffb326;
+    font-size: 14px;
+    line-height: 14px;
+    top: -12px;
+    right: 5px;
+}
+.header-bag:hover{
+    cursor: pointer;
+}
+.header-bag:hover .header-bag-list{
+    display: block;
+}
+.header-bag-list{
+    position: absolute;
+    width: 300px;
+    height: 40px;
+    right: -10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+.header-bag-item{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 40px;
+    margin-left: 20px;
+}
+/* Cart*/
+
+/* Category */
+.category{
+    height: 46px;
+    background-color: #fff;
+}
+.category-list{
+    display: flex;
+    margin-left: 190px;
+    list-style: none;
+}
+.category-item-sp{
+    position: relative;
+    margin: 0 0 0 20px;
+}
+.fa-list{
+    padding: 0 10px;
+}
+.category-item-sp a{
+    line-height: 46px;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0 75px 0 0;
+}
+.category-item{
+    margin: 0 20px;
+}
+.category-item a{
+    line-height: 46px;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+}
+.category-item a:hover{
+    color: #106f89;
+}
+
+/* Category-sp-list */
+.category-sp-list{
+    position: absolute;
+    width: 266px;
+    background-color: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+.category-sp-item{
+    list-style: none;
+    width: 100%;
+}
+.fa-chevron-right{
+    padding: 0 10px;
+    font-size: 10px;
+}
+.category-sp-item a{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 15px;
+    font-weight: 100;
+}
+.category-sp-item a:hover{
+    color: #0a5869;
+}
+.category-item-sp:hover .category-sp-list{
+    display: block;
+}
+
+/* Content1 */
+.content-header-img{
+    width: 100%;
+    height: 475px;
+}
+.content1{
+    display: flex;
+    justify-content: center;
+}
+.content1 img{
+    width: 277px;
+    margin: 32px 6px;
+}
+/* Content2 */
+.content2-1{
+    width: 240px;
+    line-height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+}
+.content2-1-1{
+    color: #106f85;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+.content2-1-2{
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 20px;
+}
+.content2-1-2:hover{
+    color: #106f85;
+}
+.content2-2{
+    display: flex;
+    justify-content: center;
+    margin: 28px 0;
+}
+.content2-2 span:first-child{
+    color: #0c6377;
+    font-weight: 600;
+    margin: 0 5px;
+    font-size: 14px;
+}
+.content2-2 span{
+    color: #333;
+    margin: 0 5px;
+    font-size: 14px;
+}
+/* Content3 */
+.content3-list{
+    display: flex;
+    justify-content: center;
+}
+.content3-item{
+    margin: 0px 6px;
+    border: 1px solid #f0f0f0;
+    padding: 10px;
+}
+.content3-item img{
+    width: 264px;
+}
+.content3-item h4{
+    font-size: 14px;
+    color: #333;
+    margin-top: 12px;
+}
+.content3-item h5{
+    color: #106f85;
+    margin: 24px 0 12px 0;
+    font-size: 15px;
+}
+.content3-item:hover{
+    background-color: #106f85;
+}
+.content3-item:hover h4{
+    color: #fff;
+}
+.content3-item:hover h5{
+    color: #fff;
+}
+.content3-item:hover .content3-emote{
+    color: #fff !important;
+}
+.content3-item:hover .content3-emote a{
+    color: #fff !important;
+}
+.content3-emote{
+    color: #106f85;
+    display:flex;
+    justify-content: center;
+    font-size: 20px;
+}
+.content3-emote i{
+    padding: 0 10px;
+   
+}
+.content3-emote a{
+    color:  #106f85 ;
+}
+.fa-eye{
+    margin: 0 10px;
+}
+.fa-shopping-cart{
+    cursor: pointer;
+}
+/* Content4 */
+.content4{
+    /* position: relative; */
+    height: 422px;
+    margin: 32px 0;
+    background: url('https://kenhz.net/wp-content/uploads/2020/07/mat-kinh-cartier-hang-hieu-binh-duong.jpg') top center/cover no-repeat;
+  
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+.content4-left-list{
+    display: flex;
+}
+.content4-left-item{
+    text-align: center;
+}
+.content4-left-item-img{
+    padding: 10px 20px;
+}
+.content4-left-item-img:hover{
+    background-color: #106f85;
+    cursor: pointer;
+}
+.content4-left-item-img h3{
+    color: #fff;
+    font-size: 14px;
+}
+.content4-right{
+    /* position: absolute; */
+    position: relative;
+    background: #fff;
+    width: 652px;
+    height: 330px;
+    position: relative;
+    float: right;
+    display: flex;
+    top: 0;
+    left: 30px;
+}
+/* Btn-left-right */
+.content4-right-img{
+    margin: 47px 30px 32px 20px;
+}
+.content4-right-right{
+    margin-top: 15px;
+    margin-right: 22px;
+}
+.content4-right-page{
+    /* float: right; */
+    position: absolute;
+    right: 10px;
+}
+.content4-right-btn{
+    text-decoration: none;
+}
+.content4-right-btn-icon1{
+    color: #7f7f7f;
+    padding: 8px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    font-size: 19px;
+}
+.content4-right-btn-icon1:hover{
+    background-color: #488bd833;
+    color: rgb(133, 131, 131);
+}
+.content4-right-btn-icon2{
+    color: #000;
+    padding: 8px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    font-size: 19px;
+}
+.content4-right-btn-icon2:hover{
+    background-color: #106f85;
+    color: #fff;
+}
+
+.content4-right-right h4{
+    font-size: 14px;
+    color: #333;
+    margin-top: 32px;
+}
+.content4-right-right h5{
+    color: #106f85;
+    margin: 24px 0 12px 0;
+    font-size: 15px;
+}
+.content4-right-right h6{
+    color: #333;
+    margin: 16px 0px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.header-btn3{
+    width: 192px;
+    min-height: 38px;
+    background-color: #4ca0af;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 0;
+    margin-top: 10px;
+}
+.content4-right-img:hover{
+    cursor: pointer;
+}
+
+/* border-top: 1px solid #000; */
+.content5-1{
+    width: 200px;
+    line-height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+}
+
+/* Content5 */
+.content5{
+    position: relative;
+    height: 296px;
+    margin: 32px 0;
+    background: url('https://manluxury.vn/wp-content/uploads/2019/12/kinh-thoi-trang-nam-nu-cao-cap-mer-10.jpg') top center/cover no-repeat;
+    
+    padding: 40px 0;
+}
+.content5-img{
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 10px solid rgba(0,0,0,0.5);
+    border-radius: 100%;
+    overflow: hidden;
+}
+.content5-review{
+    width: 1180px;
+    background-color: rgba(0, 0, 0, 0.85);
+    margin: 0 auto;
+    padding: 40px 0 20px 0;
+    margin-top: 70px;
+    text-align: center;
+    color: #fff;
+}
+.content5-review h2{
+    padding: 15px 0;
+    font-size: 16px;
+}
+
+/* Content6 */
+
+.content6-list{
+    width: 360px;
+    margin: 0 10px;
+    display: flex;
+    justify-self: center;
+}
+.content6-1{
+    line-height: 50px;
+    cursor: pointer;
+}
+.content-sell{
+    display: flex;
+    
+}
+.content6-item{
+    display: flex;
+    border: 1px solid #ebebeb;
+    margin: 10px 0 10px;
+}
+.content6-img{
+    height: 150px;
+    padding: 10px;
+}
+.content6-right{
+    padding: 12px;
+}
+.content6-right h4{
+    font-size: 14px;
+    color: #333;
+}
+.content6-right h5{
+    color: #106f85;
+    margin: 24px 0 12px 0;
+    font-size: 15px;
+}
+.content6-right h6{
+    color: #333;
+    margin: 16px 0px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.content6-img:hover{
+    cursor: pointer;
+}
+.content6-item:hover{
+    background-color: #106f85;
+}
+.content6-item:hover .content6-right h4,
+.content6-item:hover .content6-right h5,
+.content6-item:hover .content6-right h6
+{
+    color: #fff;
+}
+.content6-bottom-img{
+    text-align: center;
+}
+.content6-bottom-img img{
+    width: 178px;
+    margin: 0 3px;
+}
+
+/* Content8 */
+.content8{
+    /* position: relative; */
+    height: 300px;
+    background-image: url('https://shopuytin.vn/pictures/picfullsizes/2020/11/10/szw1604983790.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    margin-top: 20px;
+}
+.content8-list{
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+}
+.content8-item1{
+    color: #fff;
+    position: relative;
+    width: 25%;
+    padding: 45px 25px 0 10px;
+  
+}
+.content8-item1 h3{
+    font-size: 16px;
+    font-weight: 500;
+}
+.content8-item1 p{
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 200;
+    margin: 25px 0;
+}
+.content8-phone{
+    margin: 16px 0;
+}
+.content-contact{
+    margin-top: 25px;
+}
+.content-contact li{
+    list-style: none;
+}
+.content-contact li a{
+    text-decoration: none;
+    line-height: 24px;
+    color: #fff;
+    font-size: 14px;
+}
+.content-contact li a:hover{
+    color: #3fc7e6;
+}
+.content8-item1.last {
+    flex: 1;
+}
+.content8-search {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+}
+.content8-search-input {
+    padding: 10px;
+    width: 500px;
+    outline: none;
+}
+.content8-search-btn {
+    outline: none;
+    border: none;
+    padding: 12px;
+}
+.copyright {
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+.copyright-link {
+    color:white;
+    text-decoration: none;
+}
+.copyright-link:hover {
+    color: #3fc7e6;
+}
