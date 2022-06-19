@@ -25,12 +25,14 @@
             $_SESSION['id']=$db[2];
             $_SESSION['name']=$db[0];
         }
+       
         if(isset($_SESSION['id'])){
+            if ( $phone=='123456789'&&$pass=='123456789'){
+                header('Location: ../../Admin/GdAdmin/index.php');
+            }
+            else
             header("Location: ../index.php");
         }
-        if (isset($_SESSION['Admin'])){
-            session_start();
-            $admin = $_SESSION['Admin'];
-            header('Location: ../Admin/GdAdmin/index.php');
-        }
 ?>
+<script>
+</script>
