@@ -1,0 +1,23 @@
+.donhang_box{
+    width: 30%;
+    background-color: rgb(224, 216, 216);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    margin: 10px auto 20px;
+}
+
+.donhang_box-header{
+    display:inline-block;
+    min-width: 130px;
+}
+
+.donhang_box-content{
+    display:inline-block;
+}
+
+
+
+.total_money{
+    text-align: right;
+    padding: 4px 32px;
+}
