@@ -79,10 +79,40 @@
                                                 ?>`
                     break;
                 case 'Quản lí đơn hàng':
+                
+
+                   
                     $('.content').innerHTML = `<?php
                                                 include '../QlDonHang/Form_ShowDonHang.php'
-                                                ?>`
-                    break;
+                                                ?>`;
+                                            var btnConfirm = $$('.confirm')
+                                            var btncancel = $$('.cancel')
+                                            var btnSuccess = $$('.success')
+                                            console.log( $$('.status'))
+                                            $$('.status').forEach((item,index)=>{
+                                                if(item.textContent!=="Chờ xác nhận")
+                                                {
+                                                    item.style.color = 'black';
+                                                    btnConfirm[index].setAttribute('disabled',true);
+                                                    btncancel[index].setAttribute('disabled',true);           
+                                                }
+                                                if(item.textContent=="Đơn đã bị hủy")
+                                                {
+                                                    btncancel[index].setAttribute('disabled',true);         
+                                                    btnSuccess[index].setAttribute('disabled',true);         
+                                                    item.style.color = 'red';
+                                                }
+                                                if(item.textContent=="Đơn đã được xác nhận")
+                                                item.style.color = '#53BF9D';
+                                                if(item.textContent=="Đơn đã giao thành công")
+                                                {
+                                                    item.style.color = 'blue';
+                                                    btnConfirm[index].setAttribute('disabled',true);
+                                                    btncancel[index].setAttribute('disabled',true);  
+                                                    btnSuccess[index].setAttribute('disabled',true);           
+                                                }
+                                            })
+                                    break;
                 case 'Thống kê':
                     $('.content').innerHTML = `<?php
                                                 include '../ThongKe/thongke.php'
@@ -103,20 +133,20 @@
             document.location = delUrl;
         }
     }
-    let btnConfirm = $$('.confirm')
-    let btncancel = $$('.cancel')
-    console.log( $$('.status'))
-    $$('.status').forEach((item,index)=>{
-        if(item.textContent!=="Chờ xác nhận")
-        {
-            btnConfirm[index].setAttribute('disabled',true);
-            btncancel[index].setAttribute('disabled',true);           
-        }
-        if(item.textContent=="Đơn đã bị hủy")
-        item.style.color = 'red';
-        if(item.textContent=="Đơn đã được xác nhận")
-        item.style.color = 'blue';
-    })
+    // let btnConfirm = $$('.confirm')
+    // let btncancel = $$('.cancel')
+    // console.log( $$('.status'))
+    // $$('.status').forEach((item,index)=>{
+    //     if(item.textContent!=="Chờ xác nhận")
+    //     {
+    //         btnConfirm[index].setAttribute('disabled',true);
+    //         btncancel[index].setAttribute('disabled',true);           
+    //     }
+    //     if(item.textContent=="Đơn đã bị hủy")
+    //     item.style.color = 'red';
+    //     if(item.textContent=="Đơn đã được xác nhận")
+    //     item.style.color = 'blue';
+    // })
 </script>
 <?php
     include("../QLSanPham/Connect.php");

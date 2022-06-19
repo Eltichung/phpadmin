@@ -70,7 +70,7 @@
                 </td>
                 <td>
                     <a href="../QlDonHang/Form_ConfirmDHSuccess.php?id=<?=$r['idHD']?>">
-                        <button class="btn btn-primary confirm" >Giao thành công</button>
+                        <button class="btn btn-primary success" >Giao thành công</button>
                     </a>
                 </td>
                 <td>
