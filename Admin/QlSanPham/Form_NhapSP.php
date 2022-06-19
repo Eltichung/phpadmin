@@ -47,6 +47,10 @@
                     <input type="text" class="form-control price_input" placeholder="Enter price" name="price_sale" />
                 </div>
                 <div class="form-group">
+                    <label>Chiết khấu:</label>
+                    <input type="text" class="form-control price_input" placeholder="Enter discount" name="discount" />
+                </div>
+                <div class="form-group">
                     <label>Số lượng:</label>
                     <input type="number" class="form-control quantily_input" placeholder="Enter quantily" name="quantity" />
                 </div>

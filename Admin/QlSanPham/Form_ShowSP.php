@@ -27,6 +27,7 @@
                     <th scope="col">Thương Hiệu</th>
                     <th scope="col">Giá Nhập</th>
                     <th scope="col">Giá Bán</th>
+                    <th scope="col">Chiết khấu</th>
                     <th scope="col">Số Lượng</th>
                     <th scope="col">Mô Tả</th>
                     <th scope="col">Mô Tả Chi Tiết</th>
@@ -60,6 +61,7 @@
                 <td><?=$r['brand']?></td>
                 <td><?=$r['price']?></td>
                 <td><?=$r['price_sale']?></td>
+                <td><?=$r['discount']?></td>
                 <td><?=$r['quantity']?></td>
                 <td><?=$r['description']?></td>
                 <td><a href="#">Xem thêm</a></td>

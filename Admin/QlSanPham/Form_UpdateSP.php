@@ -54,6 +54,10 @@ $r = mysqli_fetch_assoc($result);
                     <input type="text" class="form-control price_input" placeholder="Enter price" value=<?=$r["price_sale"]?> name="price_sale" />
                 </div>
                 <div class="form-group">
+                    <label>Chiết khấu:</label>
+                    <input type="text" class="form-control price_input" placeholder="Enter discount" value=<?=$r["discount"]?> name="discount" />
+                </div>
+                <div class="form-group">
                     <label>Số lượng:</label>
                     <input type="number" class="form-control quantily_input" placeholder="Enter quantily" value=<?=$r["quantity"]?> name="quantity" />
                 </div>
