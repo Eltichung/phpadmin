@@ -6,7 +6,7 @@ session_start();
           <a href="/phpadmin/phpfront/index.php"> <img style="width:200px;height:250px" src="/phpadmin/phpfront/image/Quang-Thang.png" alt=""></a>
             </div>
             <div class="header-search">
-                <form method="get" action="/phpadmin/phpfront/search_product.php">
+                <form method="get" action="/phpadmin/phpfront/search_product.php" style="width: 100%;">
                 <input type="text" name="search" class="header-search-input" placeholder="Tìm kiếm...">
                 
                 </form>
