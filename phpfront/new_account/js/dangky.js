@@ -1,46 +1,26 @@
+
 function validate(){
+    $("#password-field").focus(function (e) { 
+        e.preventDefault();
+        $("#password-field").css("border","1px solid #ffffff");
+    });
+    $("#password-field").blur(function (e) { 
+        e.preventDefault();
+        $("#password-field").css("border","none");
+    });
     var bool=true;
-    if(!/\D\w$/.test($(".name").val())){
-        $(".name").css("border","1px solid red");
-        $(".tt_name").text("Họ tên không hợp lệ!");
+    if(!/^([A-Z]){1}([\w_\.!@#$%^&*()]+){5,31}$/.test($("#password-field").val())){
+        $("#password-field").css("border","1px solid red");
+        $("#password-field").attr("title","Mật khẩu trên 6 ký tự cần (chữ hoa đầu,số và kí tự đặc biệt)");
         bool=false;
     }
     else{
-        $(".name").css("border","1px solid #afafaf");
-        $(".tt_name").text("");
-    }
-    if(!/^[a-zA-Z0-9!@#$%^&*?]+$/.test($(".pass").val())){
-        $(".pass").css("border","1px solid red");
-        $(".tt_pass").text("Mật khẩu không hợp lệ!");
-        $(".btx_sigin").attr("type","button");
-        bool=false;
-    }
-    else{
-        $(".pass").css("border","1px solid #afafaf");
-        $(".tt_pass").text("");
-    }
-    if(!$(".adress").val()){
-        $(".adress").css("border","1px solid red");
-        $(".tt_adress").text("Địa chỉ không hợp lệ");
-        bool=false;
-    }
-    else{
-        $(".adress").css("border","1px solid #afafaf");
-        $(".tt_adress").text("");
-    }
-    if(!/^0+\d{9}$/.test($(".phone").val())){
-        $(".phone").css("border","1px solid red");
-        $(".tt_phone").text("Số điện thoại phải không hợp lệ!");
-        bool=false;
-    }
-    else{
-        $(".phone").css("border","1px solid #afafaf");
-        $(".tt_phone").text("");
+        bool=true;
     }
     if(!bool){
-        $(".btx_sigin").attr("type","button");
+        $("#btn_register").attr("type","button");
     }
     else{
-        $(".btx_sigin").attr("type","submit");
+        $("#btn_register").attr("type","submit");
     }
 }

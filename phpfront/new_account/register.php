@@ -37,10 +37,10 @@
 	            </div>
 	            <div id="a1" style="display:flex; justify-content: space-between;">
 					<div class="form-group" style="width: 45%;">
-						<button type="submit" onclick="validate()" class="form-control btn btn-primary submit px-3">Đăng kí</button>
+					<button onclick="validate()" id="btn_register" class="form-control btn btn-primary submit px-3">Đăng kí</button>
 					</div>
 					<div class="form-group"  style="width: 45%;">
-					<button type="submit" class="form-control btn btn-primary submit px-3" onclick="location.href='../account/log_in.php'">Đăng Nhập</button>
+					<button class="form-control btn btn-primary submit px-3" onclick="location.href='../account/log_in.php'">Đăng Nhập</button>
 					</div>
 				</div>
 	          </form>
@@ -55,12 +55,12 @@
 		</div>
 	</section>
 
-	<script src="js/jquery.min.js"></script>
+  <script src="js/jquery.min.js"></script>
   <script src="js/popper.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/dangnhap.js"></script>
-  <script src="js/dangky.js"></script>
+  <script src="./js/dangky.js"></script>
 
 	</body>
 </html>

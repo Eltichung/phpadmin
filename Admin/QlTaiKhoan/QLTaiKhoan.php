@@ -43,8 +43,6 @@
             echo'</th scope="col">';
             echo'<th scope="col">';
             echo "Phone";
-            echo'</th scope="col">';
-            echo'<td scope="col">Xóa</td>';
             echo" </tr>";
             $res=mysqli_query($con,$sql);
             while($db=mysqli_fetch_row($res)){
@@ -67,7 +65,6 @@
                 echo $db[4];
                 echo'</td>';
                 ?>
-                <td><button class="btn btn-primary cancel"><a class="btn-delete" style="color:white" href="javascript:confirmDelete('../QlTaiKhoan/XoaTK.php?id=<?=$db[0]?>')">Xóa</a></button></td>
                 </tr>
                 <?php
             }
