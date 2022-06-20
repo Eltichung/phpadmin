@@ -6,7 +6,7 @@ session_start();
           <a href="/phpadmin/phpfront/index.php"> <img style="width:200px;height:250px" src="/phpadmin/phpfront/image/Quang-Thang.png" alt=""></a>
             </div>
             <div class="header-search">
-                <form method="get" action="/phpadmin/phpfront/product/search_product.php">
+                <form method="get" action="/phpadmin/phpfront/search_product.php">
                 <input type="text" name="search" class="header-search-input" placeholder="Tìm kiếm...">
                 
                 </form>
@@ -82,37 +82,37 @@ session_start();
                       
                     </ul>
                 </li>
-                <li class="category-item"><a href="">TRANG CHỦ</a></li>
+                <li class="category-item"><a href="/phpadmin/phpfront/">TRANG CHỦ</a></li>
                 <li class="category-item-sp"><a href="">NHÃN HIỆU</a>
                     <ul class="category-sp-list">
                         <li class="category-sp-item">
-                            <a href="" class="sub-category-link">
-                                <i class="fas fa-chevron-right"></i>Dora</a></li>
+                            <a href="/phpadmin/phpfront/showAllSP.php?brand=dora" class="sub-category-link">
+                                <i class="fas fa-chevron-right"></i>DORA</a></li>
                         <li class="category-sp-item">
-                            <a href="" class="sub-category-link">
-                                <i class="fas fa-chevron-right"></i>PHILIPPE AUGUSTE</a></li>
+                            <a href="/phpadmin/phpfront/showAllSP.php?brand=philippe" class="sub-category-link">
+                                <i class="fas fa-chevron-right"></i>PHILIPPE</a></li>
                         <li class="category-sp-item">
-                            <a href="" class="sub-category-link">
-                                <i class="fas fa-chevron-right"></i>Prada</a></li>
+                            <a href="/phpadmin/phpfront/showAllSP.php?brand=prada" class="sub-category-link">
+                                <i class="fas fa-chevron-right"></i>PRADA</a></li>
                         <li class="category-sp-item">
-                            <a href="" class="sub-category-link">
+                            <a href="/phpadmin/phpfront/showAllSP.php?brand=owndays" class="sub-category-link">
                                 <i class="fas fa-chevron-right"></i>OWNDAYS</a></li>
                         <li class="category-sp-item">
-                            <a href="" class="sub-category-link">
+                            <a href="/phpadmin/phpfront/showAllSP.php?brand=mango" class="sub-category-link">
                                 <i class="fas fa-chevron-right"></i>MANGO</a></li>
                     </ul>
                 </li>
-                <li class="category-item"><a href="./showAllSp/showAllSP.php">SẢN PHẨM</a></li>
+                <li class="category-item"><a href="/phpadmin/phpfront/showAllSP.php">SẢN PHẨM</a></li>
                 <li class="category-item-sp"><a href="">GIÁ BÁN</a>
                     <ul class="category-sp-list">
                         <li class="category-sp-item">
-                            <a href="" class="sub-category-link">
+                            <a href="/phpadmin/phpfront/showAllSP.php?price=1" class="sub-category-link">
                                 <i class="fas fa-chevron-right"></i>Dưới 2 triệu</a></li>
                         <li class="category-sp-item">
-                            <a href="" class="sub-category-link">
+                            <a href="/phpadmin/phpfront/showAllSP.php?price=2" class="sub-category-link">
                                 <i class="fas fa-chevron-right"></i>Từ 2 - 4 triệu</a></li>
                         <li class="category-sp-item">
-                            <a href="" class="sub-category-link">
+                            <a href="/phpadmin/phpfront/showAllSP.php?price=3" class="sub-category-link">
                                 <i class="fas fa-chevron-right"></i>Trên 4 triệu</a></li>
                         
                     </ul>
